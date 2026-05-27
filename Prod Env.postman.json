@@ -1,0 +1,42 @@
+{
+    "name": "Prod Env",
+    "values": [
+        {
+            "key": "baseUrl",
+            "value": "https://api.clickup.com/api/v2/",
+            "type": "default",
+            "enabled": true
+        },
+        {
+            "key": "no_spaces_team_id",
+            "value": "90121755613",
+            "type": "default",
+            "enabled": true
+        },
+        {
+            "key": "with_spaces_team_id",
+            "value": "90121755543",
+            "type": "default",
+            "enabled": true
+        },
+        {
+            "key": "token",
+            "value": "pk_302443215_9N2897VBMZA5ALSVXJ9TJ8KFKS1ANC4G",
+            "type": "default",
+            "enabled": true
+        },
+        {
+            "key": "baseUrl",
+            "value": "https://api.clickup.com/api/v2/",
+            "type": "default",
+            "enabled": true
+        },
+        {
+            "key": "listId",
+            "value": "",
+            "type": "default",
+            "enabled": true
+        }
+    ],
+    "_postman_variable_scope": "environment"
+}

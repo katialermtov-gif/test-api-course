@@ -1,0 +1,501 @@
+{
+    "info": {
+        "name": "Katia API",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "домашка 2",
+            "description": "",
+            "item": [
+                {
+                    "name": "створити ліст",
+                    "description": "",
+                    "event": [
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [],
+                                "type": "text/javascript",
+                                "packages": {}
+                            }
+                        }
+                    ],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Katia2\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "folder/:folder_id/list",
+                            "path": [
+                                "folder",
+                                ":folder_id",
+                                "list"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "folder_id",
+                                    "value": "901211410938",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "отримати ліст",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "GET",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "{{listId}}",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "змінити ліст",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"katia3\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "{{listId}}",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "отримати лісти",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "GET",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "folder/:folder_id/list",
+                            "path": [
+                                "folder",
+                                ":folder_id",
+                                "list"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "folder_id",
+                                    "value": "901211410938",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "видалити ліст",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "DELETE",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "{{listId}}",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                },
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                }
+            ],
+            "auth": {}
+        },
+        {
+            "name": "TC1G",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "pk_302443215_JLFQV65KNF4Q3KZMR43NW0SYOVOUTHP0",
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "url": {
+                    "raw": "team/:team_id/space",
+                    "path": [
+                        "team",
+                        ":team_id",
+                        "space"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "key": "archived",
+                            "value": "false",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ],
+                    "variable": [
+                        {
+                            "key": "team_id",
+                            "value": "90121755543",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "TC2G",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "pk_302443215_JLFQV65KNF4Q3KZMR43NW0SYOVOUTHP0",
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "url": {
+                    "raw": "team/:team_id/space",
+                    "path": [
+                        "team",
+                        ":team_id",
+                        "space"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "key": "archived",
+                            "value": "false",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ],
+                    "variable": [
+                        {
+                            "key": "team_id",
+                            "value": "90121755613",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "TC3G",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "GET",
+                "body": {},
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "pk_302443215_JLFQV65KNF4Q3KZMR43NW0SYOVOUTHP0",
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "url": {
+                    "raw": "team/:team_id/space",
+                    "path": [
+                        "team",
+                        ":team_id",
+                        "space"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "key": "archived",
+                            "value": "false",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ],
+                    "variable": [
+                        {
+                            "key": "team_id",
+                            "value": "1",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "TC4G",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {
+                    "type": "noauth",
+                    "noauth": []
+                },
+                "method": "GET",
+                "body": {},
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "pk_302443215_JLFQV65KNF4Q3KZMR43NW0SYOVOUTHP0",
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "url": {
+                    "raw": "team/:team_id/space",
+                    "path": [
+                        "team",
+                        ":team_id",
+                        "space"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [
+                        {
+                            "key": "archived",
+                            "value": "false",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ],
+                    "variable": [
+                        {
+                            "key": "team_id",
+                            "value": "90121755543",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        },
+        {
+            "name": "TC1P",
+            "description": "",
+            "event": [],
+            "auth": {},
+            "request": {
+                "auth": {},
+                "method": "POST",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"create1\",\n    \"multiple_assignees\": \"true\",\n    \"features\": {\n    \"due_dates\": {\n      \"enabled\": true,\n      \"start_date\": true,\n      \"remap_due_dates\": true,\n      \"remap_closed_due_date\": true\n    },\n    \"time_tracking\": {\n      \"enabled\": true\n    },\n    \"tags\": {\n      \"enabled\": true\n    },\n    \"time_estimates\": {\n      \"enabled\": true\n    },\n    \"checklists\": {\n      \"enabled\": true\n    },\n    \"custom_fields\": {\n      \"enabled\": true\n    },\n    \"remap_dependencies\": {\n      \"enabled\": true\n    },\n    \"dependency_warning\": {\n      \"enabled\": true\n    },\n    \"portfolios\": {\n      \"enabled\": true\n    }\n  }\n\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "header": [],
+                "url": {
+                    "raw": "https://api.clickup.com/api/v2/team/:team_id/space",
+                    "path": [
+                        "api",
+                        "v2",
+                        "team",
+                        ":team_id",
+                        "space"
+                    ],
+                    "host": [
+                        "api",
+                        "clickup",
+                        "com"
+                    ],
+                    "protocol": "https",
+                    "query": [],
+                    "variable": [
+                        {
+                            "key": "team_id",
+                            "value": "{{with_spaces_team_id}}",
+                            "description": "",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "response": [],
+            "protocolProfileBehavior": {
+                "strictSSL": false,
+                "followRedirects": true
+            }
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}
