@@ -1,0 +1,30 @@
+{
+  "name": "Prod Env",
+  "values": [
+    {
+      "key": "no_spaces_team_id",
+      "value": "90121755613",
+      "enabled": true
+    },
+    {
+      "key": "with_spaces_team_id",
+      "value": "90121755543",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "pk_302443215_0LMCNUEAYV2KHUNMO0FKLBXDFV72PH3Q",
+      "enabled": true
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://api.clickup.com/api/v2",
+      "enabled": true
+    },
+    {
+      "key": "listId",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}
