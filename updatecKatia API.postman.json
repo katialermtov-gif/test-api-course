@@ -1,0 +1,196 @@
+{
+    "info": {
+        "name": "Katia API",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get",
+            "description": "",
+            "item": [
+                {
+                    "name": "Post",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"domashka update\"}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "folder/:folder_id/list",
+                            "path": [
+                                "folder",
+                                ":folder_id",
+                                "list"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "folder_id",
+                                    "value": "901211410938",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "Get",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {
+                            "type": "inherit",
+                            "inherit": []
+                        },
+                        "method": "GET",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "901218651182",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "Get invalid",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {
+                            "type": "inherit",
+                            "inherit": []
+                        },
+                        "method": "GET",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "901218651183",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                },
+                {
+                    "name": "delete",
+                    "description": "",
+                    "event": [],
+                    "auth": {},
+                    "request": {
+                        "auth": {},
+                        "method": "DELETE",
+                        "body": {},
+                        "header": [],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "901218651182",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                },
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                }
+            ],
+            "auth": {}
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}

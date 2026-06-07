@@ -1,0 +1,144 @@
+{
+    "info": {
+        "name": "Katia API",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Put",
+            "description": "",
+            "item": [
+                {
+                    "name": "create list in prescript /update in postscript /delete",
+                    "description": "",
+                    "event": [
+                        {
+                            "listen": "prerequest",
+                            "script": {
+                                "exec": [
+                                    "pm.sendRequest({",
+                                    "    url: 'https://api.clickup.com/api/v2/folder/901211410938/list',",
+                                    "    method: 'POST',",
+                                    "    header: {",
+                                    "        'Content-Type': 'application/json',",
+                                    "        'Authorization': pm.environment.get(\"token\")",
+                                    "    },",
+                                    "    body: {",
+                                    "        mode: 'raw',",
+                                    "        raw: JSON.stringify({",
+                                    "            name: \"domashka update\"",
+                                    "        })",
+                                    "    }",
+                                    "}, function (err, res) {",
+                                    "    if (err) {",
+                                    "        console.error(err);",
+                                    "        return;",
+                                    "    }",
+                                    "",
+                                    "    const json = res.json();",
+                                    "",
+                                    "    console.log('prerequest');",
+                                    "",
+                                    "    pm.environment.set('listId', json.id);",
+                                    "});"
+                                ],
+                                "type": "text/javascript",
+                                "packages": {}
+                            }
+                        },
+                        {
+                            "listen": "test",
+                            "script": {
+                                "exec": [
+                                    "pm.sendRequest({",
+                                    "    url: `https://api.clickup.com/api/v2/list/${pm.environment.get('listId')}`,",
+                                    "    method: 'DELETE',",
+                                    "    header: {",
+                                    "        'Authorization': pm.environment.get('token')",
+                                    "    }",
+                                    "}, function (err, res) {",
+                                    "    console.log('postrequest')",
+                                    "});"
+                                ],
+                                "type": "text/javascript",
+                                "packages": {}
+                            }
+                        }
+                    ],
+                    "auth": {},
+                    "request": {
+                        "auth": {
+                            "type": "inherit",
+                            "inherit": []
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"dumashka update new\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        },
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "pk_302443215_I3YNUJTA5JLARVU0IY7TYKL33A904ET5",
+                                "description": "",
+                                "type": "string"
+                            }
+                        ],
+                        "url": {
+                            "raw": "list/:list_id",
+                            "path": [
+                                "list",
+                                ":list_id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "key": "list_id",
+                                    "value": "{{listId}}",
+                                    "description": "",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [],
+                    "protocolProfileBehavior": {
+                        "strictSSL": false,
+                        "followRedirects": true
+                    }
+                }
+            ],
+            "event": [
+                {
+                    "listen": "prerequest",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                },
+                {
+                    "listen": "test",
+                    "script": {
+                        "exec": [],
+                        "type": "text/javascript",
+                        "packages": {}
+                    }
+                }
+            ],
+            "auth": {}
+        }
+    ],
+    "variable": [],
+    "event": [],
+    "auth": {}
+}
