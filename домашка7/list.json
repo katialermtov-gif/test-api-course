@@ -1,0 +1,116 @@
+{
+  "lists": [
+      {
+          "id": "901218733321",
+          "name": "first",
+          "orderindex": 40,
+          "content": "",
+          "status": null,
+          "priority": null,
+          "assignee": null,
+          "task_count": 0,
+          "due_date": null,
+          "start_date": null,
+          "folder": {
+              "id": "901211410938",
+              "name": "folder 1",
+              "hidden": false,
+              "archived": false,
+              "access": true
+          },
+          "space": {
+              "id": "90127627382",
+              "name": "Team Space",
+              "archived": false,
+              "access": true
+          },
+          "archived": false,
+          "override_statuses": false,
+          "permission_level": "create"
+      },
+      {
+          "id": "901218733325",
+          "name": "second",
+          "orderindex": 41,
+          "content": "",
+          "status": null,
+          "priority": null,
+          "assignee": null,
+          "task_count": 0,
+          "due_date": null,
+          "start_date": null,
+          "folder": {
+              "id": "901211410938",
+              "name": "folder 1",
+              "hidden": false,
+              "archived": false,
+              "access": true
+          },
+          "space": {
+              "id": "90127627382",
+              "name": "Team Space",
+              "archived": false,
+              "access": true
+          },
+          "archived": false,
+          "override_statuses": false,
+          "permission_level": "create"
+      },
+      {
+          "id": "901218733338",
+          "name": "domashka update",
+          "orderindex": 42,
+          "content": "",
+          "status": null,
+          "priority": null,
+          "assignee": null,
+          "task_count": 0,
+          "due_date": null,
+          "start_date": null,
+          "folder": {
+              "id": "901211410938",
+              "name": "folder 1",
+              "hidden": false,
+              "archived": false,
+              "access": true
+          },
+          "space": {
+              "id": "90127627382",
+              "name": "Team Space",
+              "archived": false,
+              "access": true
+          },
+          "archived": false,
+          "override_statuses": false,
+          "permission_level": "create"
+      },
+      {
+          "id": "901218733341",
+          "name": " Bibi",
+          "orderindex": 43,
+          "content": "",
+          "status": null,
+          "priority": null,
+          "assignee": null,
+          "task_count": 0,
+          "due_date": null,
+          "start_date": null,
+          "folder": {
+              "id": "901211410938",
+              "name": "folder 1",
+              "hidden": false,
+              "archived": false,
+              "access": true
+          },
+          "space": {
+              "id": "90127627382",
+              "name": "Team Space",
+              "archived": false,
+              "access": true
+          },
+          "archived": false,
+          "override_statuses": false,
+          "permission_level": "create"
+      }
+  ]
+}
