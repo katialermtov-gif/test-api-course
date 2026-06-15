@@ -1,0 +1,34 @@
+{
+  "id": "generated-env",
+  "name": "Prod Env",
+  "values": [
+    {
+      "key": "no_spaces_team_id",
+      "value": "90121755613",
+      "enabled": true
+    },
+    {
+      "key": "with_spaces_team_id",
+      "value": "90121755543",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "pk_302443215_165TQHSI0882JAP2EDEYNFMW68UQ3EVK",
+      "enabled": true
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://api.clickup.com/api/v2",
+      "enabled": true
+    },
+    {
+      "key": "listId",
+      "value": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-06-12T00:00:00Z",
+  "_postman_exported_using": "ChatGPT"
+}
