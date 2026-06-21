@@ -11,7 +11,7 @@ jobs:
           command: pip install -r "домашка 10/requirements.txt"
       - run:
           name: Run tests
-          command: pytest "домашка 10/tests/" -v
+          command: pytest "домашка 10/" -v
 
 workflows:
   run-tests:
