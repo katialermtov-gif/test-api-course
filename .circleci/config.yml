@@ -1,4 +1,3 @@
-
 version: 2.1
 
 jobs:
@@ -9,10 +8,10 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: pip install -r requirements.txt
+          command: pip install -r "домашка 10/requirements.txt"
       - run:
           name: Run tests
-          command: pytest tests/ -v
+          command: pytest "домашка 10/tests/" -v
 
 workflows:
   run-tests:
